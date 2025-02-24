@@ -1,10 +1,10 @@
 pipeline {
 tools{
-       jdk 'JAVA_HOME_UBU'
-	   maven 'M2_HOME_UBU'
+       jdk 'JAVA_HOME_LIN'
+	   maven 'M2_HOME_LIN'
 	   
 }
-    agent {label 'winslave'}
+    agent {label 'linslave'}
 
     stages {
         stage('Checkout') {
